@@ -1,0 +1,15 @@
+.about {
+    background: lightyellow;
+    min-height: 100vh;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+.about > * {
+    white-space: pre-wrap;
+    background: #fff;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 20px;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+}
