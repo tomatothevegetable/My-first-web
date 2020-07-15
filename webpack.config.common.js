@@ -5,8 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
+    filename: 'bundle.js'
   },
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
@@ -29,7 +28,7 @@ module.exports = {
         test: /\.(wav|jpeg|png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
         loader: 'file-loader',
         options:{
-          name: 'static/media/[name].[hash:8].[ext]'
+          name: '[name].[hash:8].[ext]'
         }
       }
     ]

@@ -8,7 +8,8 @@
     "build": "npm run clean && npm run build:webpack",
     "test": "mocha './tests/**/*.spec.js' --compilers js:babel-core/register",
     "clean": "rimraf dist",
-    "start": "node devServer.js"
+    "start": "node devServer.js",
+    "serve": "node prodServer.js"
   },
   "author": "",
   "license": "ISC",
@@ -27,7 +28,7 @@
     "bootstrap": "^4.5.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^0.23.1",
-    "eslint": "^2.9.0",
+    "eslint": "^7.4.0",
     "eslint-plugin-babel": "^3.2.0",
     "eslint-plugin-react": "^5.0.1",
     "express": "^4.13.4",
